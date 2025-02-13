@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	text-decoration: none;
 	color: black;
 }
@@ -18,10 +18,15 @@ header {
 	justify-content: space-between;
 }
 
+img {
+	padding: 0;
+	margin: 0;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
-	padding-top: 3vh;
+	padding-top: 4vh;
 	list-style-type: none;
 	padding-right: 5vw;
 }
@@ -39,6 +44,12 @@ h1 {
 	padding: 0;
 	font-size: 16pt;
 	text-align: center;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+footer h1 {
+	padding: 0;
 }
 
 p {
@@ -51,8 +62,10 @@ p:hover {
 	text-decoration: underline;
 }
 
-.logo img {
+.logo img{
 	height: 10vh;
+	margin: 0;
+	padding: 0;
 }
 
 .banner{
@@ -109,4 +122,10 @@ section {
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.map {
+	display: block;
+    width: 100%; /* Adjust as needed */
+	margin-bottom: 3vh;
 }
