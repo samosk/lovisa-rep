@@ -78,17 +78,34 @@ section {
 	padding: 0;
 	text-align: center;
 }
-
 .start-pictures {
-	display: inline-flex;
-	width: 100vw;
-	justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    gap: 5vw; /* Adds spacing between the pictures */
 }
 
-.menu-picture {
-	padding-left: 20vw;
-}
-
+.menu-picture,
 .table-picture {
-	padding-right: 20vw;
+    position: relative;
+    text-align: center;
+}
+
+.menu-picture img,
+.table-picture img {
+    display: block;
+    width: 100%; /* Ensures image responsiveness */
+    height: auto;
+}
+
+.menu-picture h2,
+.table-picture h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Ensures text visibility */
+    font-size: 24pt;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
